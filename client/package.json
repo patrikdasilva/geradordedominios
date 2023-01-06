@@ -1,5 +1,5 @@
 {
-  "name": "fullstack-vaga",
+  "name": "namegator-client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,12 +8,19 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.2.2",
+    "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "font-awesome": "^4.7.0",
+    "nodemon": "^2.0.20",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@types/axios": "^0.14.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
@@ -30,9 +37,23 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
     },
-    "rules": {}
+    "rules": {
+      "quotes": [
+        "error",
+        "double"
+      ],
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
